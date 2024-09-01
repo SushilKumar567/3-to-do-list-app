@@ -6,9 +6,9 @@
 }
 
 .container {
-  width: 100vw;
+  min-width: 100vw;
   min-height: 100vh;
-  background: #153677dd;
+  background-color: #b2c6b6;
   display: flex;
   justify-content: center;
 }
@@ -16,13 +16,9 @@
 .todo-app {
   min-width: 25%;
   margin: 50px 0;
-  background: #fff;
+  background-color: #fff;
   padding: 20px 20px 20px 75px;
   border-radius: 25px;
-  transition: 0.5s;
-}
-.todo-app:hover {
-  box-shadow: 0px 0px 25px black;
 }
 
 .todo-app h2 {
@@ -41,14 +37,19 @@
 .row {
   display: flex;
   justify-content: space-between;
-  background: #edeef0;
+  background: #00276522;
   border-radius: 30px;
   padding-left: 15px;
   margin-bottom: 20px;
   margin-left: -55px;
+  transition: 0.5s;
+}
+.row:hover {
+  box-shadow: 1px 1px 2.5px #002765;
 }
 
 input {
+  font-size: 18px;
   border: none;
   outline: none;
   background: transparent;
@@ -56,19 +57,21 @@ input {
 }
 
 button {
+  font-size: 18px;
   border: none;
-  padding: 15px 30px;
-  background-color: #002765bb;
+  padding: 12px 25px;
+  background-color: #002765ab;
   color: #fff;
   cursor: pointer;
   border-radius: 30px;
   transition: 0.25s ease-out;
 }
 button:hover {
-  background-color: #002765;
+  background-color: #002765ee;
 }
 
 ol li {
+  font-size: 18px;
   padding: 12px 0px;
   cursor: pointer;
   position: relative;
@@ -99,10 +102,10 @@ ol li span {
   position: absolute;
   right: 0;
   top: 5px;
-  width: 35px;
-  height: 35px;
-  font-size: 22px;
-  color: #ff5945;
+  width: 30px;
+  height: 30px;
+  font-size: 25px;
+  color: #002765bb;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -111,5 +114,6 @@ ol li span {
 }
 
 ol li span:hover {
-  background: #edeef0;
+  background-color: #00276522;
+  color: #b75b48;
 }
